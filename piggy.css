@@ -1,0 +1,300 @@
+* {
+    margin: 0;
+    padding:0px;
+    box-sizing:border-box;
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    display:none;
+    list-style:none;
+    position:absolute;
+    top:100%;
+    left:0;
+}
+
+.dropdown:hover .dropdown-menu{
+    display:block;
+}
+
+    .container{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    max-width: 1000px;
+    margin: auto;
+    padding:20px 80px;
+}
+
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:2rem;
+}
+
+.nav-btns{
+    display:flex;
+    gap:1rem;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:#000;
+}
+
+.logo img{
+    height:40px;
+}
+
+.navbar{
+    width:100%;
+}
+
+body{
+    /* background:red; */
+}
+
+.sam{
+    text-align:center;
+    max-width:700px;
+    margin:100px auto;
+}
+
+.sam h1{
+    font-size:4rem;
+    line-height:1.1;
+    font-weight:800;
+}
+
+.sam p{
+    max-width:500px;
+    margin:20px auto;
+    line-height:1.6;
+}
+
+.hero{
+    display:block;
+    justify-content:space-between;
+    align-items:center;
+    max-width:1200px;
+    margin:80px auto;
+    padding:0 20px;
+}
+
+.sam{
+    max-width:550px;
+    text-align: center;
+    max-width: 700px;
+    margin: 80px auto 40px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+}
+.image img{
+    width:85%;
+    max-width:1000px;
+    border-radius: 7%;
+}
+
+/* SECURITY SECTION */
+
+.security{
+    display:flex;
+    align-items:center;
+    gap:25px;
+    max-width:1000px;
+    margin:100px auto;
+    padding:0 20px;
+}
+
+.security-icon img{
+    width:60px;
+}
+
+.security-content h2{
+    margin-bottom:10px;
+    font-size:1.8rem;
+}
+
+.security-content p{
+    max-width:700px;
+    line-height:1.7;
+    color:#555;
+    margin-bottom:15px;
+}
+
+.security-content a{
+    text-decoration:none;
+    color:#0d60ff;
+    font-weight:600;
+}
+
+/* SAVINGS SECTION */
+
+.savings{
+    max-width:1200px;
+    margin:120px auto;
+    padding:0 20px;
+    text-align:center;
+}
+
+.savings-tag{
+    color:#0d60ff;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.savings h2{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+.savings-text{
+    max-width:700px;
+    margin:0 auto 60px;
+    color:#555;
+    line-height:1.7;
+}
+
+/* GRID */
+
+.plans-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+}
+
+/* CARD */
+
+.plan-card{
+    background:#f8f9ff;
+    border-radius:25px;
+    padding:35px;
+    text-align:left;
+    min-height:500px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+
+    transition:0.3s;
+}
+
+.plan-card:hover{
+    transform:translateY(-8px);
+}
+
+.icon{
+    width:55px;
+    margin-bottom:20px;
+}
+
+.plan-card h3{
+    font-size:1.6rem;
+    margin-bottom:15px;
+}
+
+.plan-card p{
+    color:#555;
+    line-height:1.7;
+    margin-bottom:25px;
+}
+
+.plan-card a{
+    text-decoration:none;
+    color:#0d60ff;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.phone{
+    width:100%;
+    max-width:220px;
+    align-self:flex-end;
+}
+
+/* INTEREST RATE BUTTON */
+
+.rates-btn{
+    text-align:center;
+    margin-top:60px;
+}
+
+.rates-btn button{
+    padding:15px 30px;
+    border:none;
+    background:#122231;
+    color:white;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:1rem;
+}
+
+/* NAV BUTTONS */
+
+.nav-btns button{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.nav-btns button:first-child{
+    background:white;
+    border:1px solid #ddd;
+}
+
+.nav-btns button:last-child{
+    background:#122231;
+    color:white;
+}
+
+/* HERO BUTTONS */
+
+.sam button{
+    padding:15px 25px;
+    border:none;
+    border-radius:10px;
+    background:#122231;
+    color:white;
+    margin:10px;
+    cursor:pointer;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .plans-grid{
+        grid-template-columns:1fr;
+    }
+
+    .security{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .container{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .sam h1{
+        font-size:2.8rem;
+    }
+
+    .savings h2{
+        font-size:2.2rem;
+    }
+}
